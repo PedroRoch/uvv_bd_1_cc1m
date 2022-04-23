@@ -60,14 +60,14 @@ Após a criação das tabelas, o programa suporta a criação por um software ca
 
 ![postgresql_45x46](https://user-images.githubusercontent.com/103005263/164914562-35af90a6-aac4-4cc4-bba9-bcba1fd4eede.png)
 
-Abra o terminal e cole cada bloco de comando separadamente(indicado no script) 
+Abra o terminal e cole cada bloco de comando separadamente(indicado no [script](https://github.com/PedroRoch/uvv_bd_1_cc1m/blob/main/PostgreSQLScript.sql))
 
 ![terminal postgres](https://user-images.githubusercontent.com/103005263/164915807-2b51b0d6-5c92-4c9f-b6e0-80d2d8f32f61.png)
 
 ## 3.2 Implementação no MariaBD/MySQL
 ![mysql-logo-DOLPHIN](https://user-images.githubusercontent.com/103005263/164915964-3faf96aa-ced2-4d8f-b7e7-d9ec11383f3d.png)
 
-Abra o terminal e cole o script como indicado(indicado no script)
+Abra o terminal e cole o script como indicado(indicado no [script](https://github.com/PedroRoch/uvv_bd_1_cc1m/blob/main/MySQLScript.sql))
 ![terminal mysql](https://user-images.githubusercontent.com/103005263/164915850-d1365b86-e081-4595-a715-3afeddde3c3c.png)
 
 # 4.Conclusão
