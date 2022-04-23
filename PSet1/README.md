@@ -74,6 +74,6 @@ Abra o terminal e cole o script como indicado(indicado no [script](https://githu
 
 Este trabalho foi bastante trabalhoso mas serviu de aprendizado a como funciona mesmo de maneira mais leve uma implementação de um SGBD Empresarial. 
 
-Aprender sobre a Linguagem Markdown foi bastante satisfatório e divertido essa parte.
+Aprender sobre a Linguagem Markdown foi bastante satisfatório e divertido.
 
 Espero continuar aprendendo, até a proxima!
