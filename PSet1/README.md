@@ -61,9 +61,38 @@ Após a criação das tabelas, o programa suporta a criação por um software ca
 
 ![postgresql_45x46](https://user-images.githubusercontent.com/103005263/164914562-35af90a6-aac4-4cc4-bba9-bcba1fd4eede.png)
 
-Abra o terminal e cole cada bloco de comando separadamente(indicado no [script](https://github.com/PedroRoch/uvv_bd_1_cc1m/blob/main/PSet1/PostgreSQLScript.sql))
+Abra o terminal e cole cada bloco de comando separadamente(indicado no [script](https://github.com/PedroRoch/uvv_bd_1_cc1m/blob/main/PSet1/PostgreSQLScript.sql) ou no passo a passo na sessão 3.1.1)
 
 ![terminal postgres](https://user-images.githubusercontent.com/103005263/164915807-2b51b0d6-5c92-4c9f-b6e0-80d2d8f32f61.png)
+
+## 3.1.1 passo a passo do PostgreSQL
+
+⚠️ **É DE EXTREMAMENTE NECESSESIDADE SEGUIR O PASSO A PASSO.**
+
+Caso siga passo a passo mostrado, o código deverá funcinar normalmente.
+
+primeiro crie a Role e dê permissões a ela, após isso crie a database e conecte o usuário.
+>* senha do usuário é 12345
+
+![2022-04-24 19-49-55](https://user-images.githubusercontent.com/103005263/165000115-8b0e9cf9-2a07-44ea-a254-4ca324344b0a.gif)
+
+Após a primeira etapa coloque para criar o schema e selecionar o usuário e o esquema que você irá utilizar 
+
+![2022-04-24 19-55-17](https://user-images.githubusercontent.com/103005263/165000182-2fe30341-0a83-44d7-beae-f8cf9ec54eb5.gif)
+
+Agora crie as databases 
+
+![2022-04-24 19-58-04](https://user-images.githubusercontent.com/103005263/165000243-f89cc64d-4996-478f-8c03-dd02a722c516.gif)
+
+Nesta etapa de agora é **muito importante prestar atenção**
+
+Você inserir os dados da tabela um por vez como demonstrado na imagem abaixo
+
+![2022-04-24 20-06-15](https://user-images.githubusercontent.com/103005263/165000478-bf8aa2bb-7d57-42f7-ae40-3caf808630e5.gif)
+
+colocando todos os inserts de maneira adequada está finalizado a implementação do PostgreSQL.
+
+---
 
 ## 3.2 Implementação no MariaBD/MySQL
 ![mysql-logo-DOLPHIN](https://user-images.githubusercontent.com/103005263/164915964-3faf96aa-ced2-4d8f-b7e7-d9ec11383f3d.png)
@@ -71,10 +100,24 @@ Abra o terminal e cole cada bloco de comando separadamente(indicado no [script](
 Abra o terminal e cole o script como indicado(indicado no [script](https://github.com/PedroRoch/uvv_bd_1_cc1m/blob/main/PSet1/MySQLScript.sql))
 ![terminal mysql](https://user-images.githubusercontent.com/103005263/164915850-d1365b86-e081-4595-a715-3afeddde3c3c.png)
 
+## 3.2.1 Passo a passo do MaridBD/MySQL
+
+⚠️ **É DE EXTREMAMENTE NECESSESIDADE SEGUIR O PASSO A PASSO.**
+
+Crie o usuário e dê permissões a ele, após isso se desconecte e se conecte com o usuário.
+
+![2022-04-24 20-11-51](https://user-images.githubusercontent.com/103005263/165000631-4a3b8eed-26b2-437a-ac79-290c284c3324.gif)
+
+Crie a database, selecione ela, crie as tabelas e inserts
+
+![2022-04-24 20-15-10(1)](https://user-images.githubusercontent.com/103005263/165000774-43bd4b6d-59c3-4cfa-ad3f-0b4da3db76dd.gif)
+
+Com isso a impletementação no MySQL está pronta.
+
 # 4.Conclusão
 
 Este trabalho foi bastante trabalhoso mas serviu de aprendizado a como funciona mesmo de maneira mais leve uma implementação de um SGBD Empresarial. 
 
 Aprender sobre a Linguagem Markdown foi bastante satisfatório e divertido.
 
-Espero continuar aprendendo, até a proxima!
+Espero continuar aprendendo, até a proxima!!
