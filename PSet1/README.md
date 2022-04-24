@@ -21,13 +21,14 @@ Algumas etapas feitas em ordem foi necessaria para a implementação do banco de
 >* Projeto Lógico
 >* Implementação no PostegreSQL
 >* Implementação no MariaBD/MySQL
->* Aprendizado sobre a linguagem Markdown
+    Aprendizado sobre a linguagem Markdown
 
 Ferramentas usadas para a implementação do Banco de dados:
 
 >* SQL Power Architect
 >* Dbeaver
->* Principal ferramenta usada:
+>
+Principal ferramenta usada:
 >* Oracle VM Virtual Box, ([a implementação da Maquina Virtual foi feita por Abrantes, otima ferramenta para quem se 
 interessar a estudar SGBD's](https://www.computacaoraiz.com.br/2022/03/17/maquina-virtual-para-o-estudo-de-sistemas-de-gerenciamento-de-bancos-de-dados-db-server))
 
