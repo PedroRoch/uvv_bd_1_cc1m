@@ -105,6 +105,7 @@ Abra o terminal e cole o script como indicado(indicado no [script](https://githu
 ⚠️ **É DE EXTREMAMENTE NECESSESIDADE SEGUIR O PASSO A PASSO.**
 
 Crie o usuário e dê permissões a ele, após isso se desconecte e se conecte com o usuário.
+>* senha do usuário é 12345
 
 ![2022-04-24 20-11-51](https://user-images.githubusercontent.com/103005263/165000631-4a3b8eed-26b2-437a-ac79-290c284c3324.gif)
 
