@@ -35,7 +35,7 @@ CREATE TABLE elmasri.Funcionario (
                 endereco VARCHAR(50),
                 sexo CHAR(1),
                 salario NUMERIC(10,2),
-                cpf_surpevisor CHAR(11),
+                cpf_supervisor CHAR(11),
                 numero_departamento INTEGER NOT NULL,
                 CONSTRAINT pk_funcionario PRIMARY KEY (CPF)
 );
@@ -130,7 +130,7 @@ ON UPDATE NO ACTION
 NOT DEFERRABLE;
 
 ALTER TABLE elmasri.Funcionario ADD CONSTRAINT funcionario_funcionario_fk
-FOREIGN KEY (cpf_surpevisor)
+FOREIGN KEY (cpf_supervisor)
 REFERENCES elmasri.Funcionario (CPF)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION
@@ -160,7 +160,7 @@ NOT DEFERRABLE;
 -- Este bloco termina aqui
 
 -- Este bloco começa aqui, nesse passo é DE EXTREMA IMPORTÂNCIA COLOCAR CADA INSERT DE CADA VEZ para um bom funcionamento do código
-insert into funcionario (primeiro_nome, nome_meio, ultimo_nome, cpf, data_nascimento,endereco, sexo, salario, cpf_surpevisor, numero_departamento) 	
+insert into funcionario (primeiro_nome, nome_meio, ultimo_nome, cpf, data_nascimento,endereco, sexo, salario, cpf_supervisor, numero_departamento) 	
 	values  ('Fernando', 'T', 'Wong', 33344555587, '1955-08-12', 'Rua da Lapa, 34, São Paulo, SP', 'M', 40.000, 88866555576,5),
 			('João', 'B', 'Silva', 12345678966, '1965-01-09', 'Rua das Flores, 751, São Paulo, SP', 'M', 30000, 33344555587, 5),
 			('Alice', 'J', 'Zelaya', 99988777767, '1968-01-19', 'Rua Souza Lima, 35, Curitiba, PR', 'F', 25.000, 98765432168, 4),
@@ -179,7 +179,7 @@ insert into departamento (nome_departamento, numero_departamento, cpf_gerente, d
 -- Este bloco termina aqui	 
 
 -- Este bloco começa aqui
-insert into localizacoes_departamento (numero_departamento, "local") 	 
+insert into localizacoes_departamento (numero_departamento, local) 	 
 	values (1, 'São Paulo'),
 		   (4, 'Mauá'),
 		   (5, 'Santo André'),
