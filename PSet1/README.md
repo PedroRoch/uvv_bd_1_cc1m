@@ -80,7 +80,9 @@ Após a primeira etapa coloque para criar o schema e selecionar o usuário e o e
 
 ![2022-04-24 19-55-17](https://user-images.githubusercontent.com/103005263/165000182-2fe30341-0a83-44d7-beae-f8cf9ec54eb5.gif)
 
-Agora crie as databases 
+Agora crie as tables
+
+>* Após a ultima modificação no script, é possível colocar as tables e insert ao mesmo tempo, caso queira, pode ignorar o proximo passo e colocar as create table junto com os insert de uma vez só!
 
 ![2022-04-24 19-58-04](https://user-images.githubusercontent.com/103005263/165000243-f89cc64d-4996-478f-8c03-dd02a722c516.gif)
 
