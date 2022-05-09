@@ -296,4 +296,5 @@ LEFT JOIN projeto on projeto.numero_projeto=trabalha_em.numero_projeto;
 # Declarações
 
 Foi um pouco satisfatório fazer este Pset, na hora de colocar o comando e ver ele funcionando é a melhor parte disparado.
+
 Por enquanto é isso, até a próxima.
