@@ -134,8 +134,8 @@ INNER JOIN departamento on departamento.numero_departamento = funcionario.numero
 
 ## Questão 7 :
 
-Prepare um relatório que mostre, para cada funcionário que NÃO
-TEM dependente, seu nome completo, departamento e salário.
+Prepare um relatório que mostre, para cada funcionário que **NÃO
+TEM** dependente, seu nome completo, departamento e salário.
 
 ```SQL
 SELECT departamento.nome_departamento, concat(primeiro_nome," ", nome_meio,".",ultimo_nome) as nome, salario
@@ -149,10 +149,8 @@ WHERE dependente.nome_dependente is null;
 
 ## Questão 8 :
 
-Prepare um relatório que mostre, para cada departamento, os pro-
-jetos desse departamento e o nome completo dos funcionários que estão alocados
-em cada projeto. Além disso inclua o número de horas trabalhadas por cada funci-
-onário, em cada projeto.
+Prepare um relatório que mostre, para cada departamento, os projetos desse departamento e o nome completo dos funcionários que estão alocados
+em cada projeto. Além disso inclua o número de horas trabalhadas por cada funcionário, em cada projeto.
 
 ```SQL
 SELECT departamento.nome_departamento, 
@@ -171,8 +169,7 @@ ORDER BY departamento.nome_departamento DESC;
 ## Questão 9 :
 
 Prepare um relatório que mostre a soma total das horas de cada
-projeto em cada departamento. Obs.: o relatório deve exibir o nome do departa-
-mento, o nome do projeto e a soma total das horas.
+projeto em cada departamento. Obs.: o relatório deve exibir o nome do departamento, o nome do projeto e a soma total das horas.
 
 ```SQL
 SELECT departamento.nome_departamento, projeto.nome_projeto, SUM(trabalha_em.horas) as horas_somadas
@@ -201,8 +198,7 @@ GROUP BY numero_departamento;
 
 Considerando que o valor pago por hora trabalhada em um projeto
 é de 50 reais, prepare um relatório que mostre o nome completo do funcionário, o
-nome do projeto e o valor total que o funcionário receberá referente às horas traba-
-lhadas naquele projeto.
+nome do projeto e o valor total que o funcionário receberá referente às horas trabalhadas naquele projeto.
 
 ```SQL
 SELECT concat(primeiro_nome," ", nome_meio,".",ultimo_nome) as funcionario, projeto.nome_projeto, (trabalha_em.horas * 50) as valor_total, trabalha_em.horas as horas_trabalhadas
@@ -218,10 +214,7 @@ ORDER BY nome_projeto;
 
 Seu chefe está verificando as horas trabalhadas pelos funcionários
 nos projetos e percebeu que alguns funcionários, mesmo estando alocadas à algum
-projeto, não registraram nenhuma hora trabalhada. Sua tarefa é preparar um relató-
-rio que liste o nome do departamento, o nome do projeto e o nome dos funcionários
-que, mesmo estando alocados a algum projeto, não registraram nenhuma hora tra-
-balhada.
+projeto, não registraram nenhuma hora trabalhada. Sua tarefa é preparar um relatório que liste o nome do departamento, o nome do projeto e o nome dos funcionários que, mesmo estando alocados a algum projeto, não registraram nenhuma hora trabalhada.
 
 ```SQL
 SELECT departamento.nome_departamento, projeto.nome_projeto, concat(primeiro_nome," ", nome_meio,".",ultimo_nome) as funcionario, trabalha_em.horas
@@ -263,8 +256,7 @@ GROUP BY idade_funcionario DESC, idade_dependente DESC;
 
 ## Questão 14 :
 
-Prepare um relatório que exiba quantos funcionários cada departa-
-mento tem.
+Prepare um relatório que exiba quantos funcionários cada departamento tem.
 
 ```SQL
 SELECT departamento.nome_departamento, count(funcionario.cpf) as Total_Funcionarios
