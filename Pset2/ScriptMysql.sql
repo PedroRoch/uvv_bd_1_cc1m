@@ -115,7 +115,7 @@ WHEN 'F' THEN 'Feminino'
 END as sexo_dependente
 FROM funcionario
 LEFT JOIN dependente on dependente.cpf_funcionario=funcionario.cpf
-GROUP BY idade_funcionario DESC, idade_dependente DESC;
+ORDER BY idade_funcionario DESC, idade_dependente DESC;
 
 --- Questão 14:
 
