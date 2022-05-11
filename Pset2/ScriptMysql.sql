@@ -35,7 +35,7 @@ END as Gerente,
 concat(primeiro_nome," ", nome_meio,".",ultimo_nome) as funcionarios
 FROM departamento
 INNER JOIN funcionario on departamento.numero_departamento=funcionario.numero_departamento
-GROUP BY nome_departamento ASC, salario DESC;
+ORDER BY nome_departamento ASC, salario DESC;
 
 --- Questão 6:
 
