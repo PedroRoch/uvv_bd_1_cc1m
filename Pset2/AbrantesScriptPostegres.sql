@@ -3,7 +3,7 @@
 -- Questão 1 
 SELECT d.nome_departamento as departamento, AVG(f.salario) as salario_medio
 FROM departamento d 
-INNET JOIN funcionario f ON (f.numero_departamento = d.numero_departamento)
+INNER JOIN funcionario f ON (f.numero_departamento = d.numero_departamento)
 GROUP BY departamento;
 
 -- Questão 2 
