@@ -1,3 +1,17 @@
+CREATE USER 'pedro'@'localhost' IDENTIFIED BY '12345';
+
+GRANT ALL PRIVILEGES ON * . * TO 'pedro'@'localhost';
+
+FLUSH PRIVILEGES;
+
+quit
+
+mysql -u pedro -p 
+
+create database congresso;
+
+use congresso;
+
 
 CREATE TABLE PATROCINADORES (
                 cod_patrocinador CHAR(11) NOT NULL,
@@ -251,20 +265,20 @@ ALTER TABLE tel_org MODIFY COLUMN telefone_cel CHAR(11) COMMENT 'telefone celula
 ALTER TABLE tel_org MODIFY COLUMN telefone_fixo CHAR(9) COMMENT 'telefone fixo dos organizadores';
 
 
-CREATE TABLE Patrocnio (
+CREATE TABLE Patrocinio (
                 cod_patrocinio CHAR(11) NOT NULL,
                 valor DECIMAL(6,2) NOT NULL,
                 forma_pagamento VARCHAR(20) NOT NULL,
                 PRIMARY KEY (cod_patrocinio)
 );
 
-ALTER TABLE Patrocnio COMMENT 'Tabela onde vai armazenar as informações sobre o valor e a forma de pagamento do Patrocínio';
+ALTER TABLE Patrocinio COMMENT 'Tabela onde vai armazenar as informações sobre o valor e a forma de pagamento do Patrocínio';
 
-ALTER TABLE Patrocnio MODIFY COLUMN cod_patrocinio CHAR(11) COMMENT 'codigo dos patrocinadores que vao patrocinar';
+ALTER TABLE Patrocinio MODIFY COLUMN cod_patrocinio CHAR(11) COMMENT 'codigo dos patrocinadores que vao patrocinar';
 
-ALTER TABLE Patrocnio MODIFY COLUMN valor DECIMAL(6, 2) COMMENT 'valor que cada patrocinador ira pagar';
+ALTER TABLE Patrocinio MODIFY COLUMN valor DECIMAL(6, 2) COMMENT 'valor que cada patrocinador ira pagar';
 
-ALTER TABLE Patrocnio MODIFY COLUMN forma_pagamento VARCHAR(20) COMMENT 'forma de pagamento de cada patrocinio';
+ALTER TABLE Patrocinio MODIFY COLUMN forma_pagamento VARCHAR(20) COMMENT 'forma de pagamento de cada patrocinio';
 
 
 CREATE TABLE CATEGORIAS (
