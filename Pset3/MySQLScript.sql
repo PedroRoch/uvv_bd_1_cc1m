@@ -139,6 +139,9 @@ ALTER TABLE PALESTRAS MODIFY COLUMN nome_da_palestra VARCHAR(50) COMMENT 'nome d
 
 ALTER TABLE PALESTRAS MODIFY COLUMN classificacao CHAR(1) COMMENT 'M para magna e C para comum';
 
+ALTER TABLE PALESTRAS ADD CONSTRAINT CHECK (classificacao in (('C', 'M'));
+
+
 
 CREATE TABLE PALESTRANTES (
                 cod_palestrante CHAR(11) NOT NULL,
