@@ -1,12 +1,12 @@
-CREATE USER 'pedro'@'localhost' IDENTIFIED BY '12345';
+CREATE USER 'congresso'@'localhost' IDENTIFIED BY '12345';
 
-GRANT ALL PRIVILEGES ON * . * TO 'pedro'@'localhost';
+GRANT ALL PRIVILEGES ON * . * TO 'congresso'@'localhost';
 
 FLUSH PRIVILEGES;
 
 quit
 
-mysql -u pedro -p 
+mysql -u congresso -p 
 
 create database congresso;
 
